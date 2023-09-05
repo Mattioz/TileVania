@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 2953391242361038972}
   - component: {fileID: 5821169384444557011}
   - component: {fileID: 4189360430658905284}
-  m_Layer: 0
+  - component: {fileID: 2117010142768502239}
+  m_Layer: 8
   m_Name: Ginger (Player)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +99,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 773215367
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1857188551261513057, guid: 5973e7d95115a6048a3be5f39e1dcfd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +127,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -136,7 +137,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &2953391242361038972
 CapsuleCollider2D:
@@ -148,7 +149,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4b83d4941a7775941b0c01358abe644a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -172,8 +173,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.039965868, y: -0.05449897}
-  m_Size: {x: 0.5712743, y: 0.9200679}
+  m_Offset: {x: -0.039965868, y: -0.050628185}
+  m_Size: {x: 0.5712743, y: 0.91232634}
   m_Direction: 0
 --- !u!114 &5821169384444557011
 MonoBehaviour:
@@ -217,3 +218,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab241167931a9f419196a5bade961d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 6
+  jumpSpeed: 15
+  climbSpeed: 5
+--- !u!61 &2117010142768502239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8640646133010820766}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.035961628, y: -0.447963}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.24, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.48472595, y: 0.104074}
+  m_EdgeRadius: 0
