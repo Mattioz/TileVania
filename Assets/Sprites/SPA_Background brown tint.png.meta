@@ -147,11 +147,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 115
-        width: 33
-        height: 33
+        y: 116
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,12 +167,12 @@ TextureImporter:
       name: SPA_Background brown tint_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 115
-        width: 34
-        height: 33
+        x: 38
+        y: 116
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: SPA_Background brown tint_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 115
-        width: 34
-        height: 33
+        x: 76
+        y: 116
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: SPA_Background brown tint_3
       rect:
         serializedVersion: 2
-        x: 113
-        y: 115
-        width: 34
-        height: 33
+        x: 114
+        y: 116
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,11 +231,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 77
-        width: 33
-        height: 34
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: SPA_Background brown tint_5
       rect:
         serializedVersion: 2
-        x: 37
-        y: 77
-        width: 34
-        height: 34
+        x: 38
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: SPA_Background brown tint_6
       rect:
         serializedVersion: 2
-        x: 75
-        y: 77
-        width: 34
-        height: 34
+        x: 76
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: SPA_Background brown tint_7
       rect:
         serializedVersion: 2
-        x: 113
-        y: 77
-        width: 34
-        height: 34
+        x: 114
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,11 +315,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 39
-        width: 33
-        height: 34
+        y: 40
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: SPA_Background brown tint_9
       rect:
         serializedVersion: 2
-        x: 37
-        y: 39
-        width: 34
-        height: 34
+        x: 38
+        y: 40
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: SPA_Background brown tint_10
       rect:
         serializedVersion: 2
-        x: 75
-        y: 39
-        width: 34
-        height: 34
+        x: 76
+        y: 40
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: SPA_Background brown tint_11
       rect:
         serializedVersion: 2
-        x: 113
-        y: 39
-        width: 34
-        height: 34
+        x: 114
+        y: 40
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,11 +399,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 33
-        height: 34
+        y: 2
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: SPA_Background brown tint_13
       rect:
         serializedVersion: 2
-        x: 37
-        y: 1
-        width: 34
-        height: 34
+        x: 38
+        y: 2
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: SPA_Background brown tint_14
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1
-        width: 34
-        height: 34
+        x: 76
+        y: 2
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,12 +461,12 @@ TextureImporter:
       name: SPA_Background brown tint_15
       rect:
         serializedVersion: 2
-        x: 113
-        y: 1
-        width: 34
-        height: 34
+        x: 114
+        y: 2
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,7 +481,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6db663006cc34694fbb7eae9be0475ba
     internalID: 0
     vertices: []
     indices: 
