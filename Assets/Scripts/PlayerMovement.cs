@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 20f;
     [SerializeField] float climbSpeed = 10f;
+    [SerializeField] Vector2 deathKick = new Vector2(10f, 10f); 
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
@@ -96,10 +97,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if(myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            myRigidbody.velocity = deathKick;
         }
     }
+    
 }
