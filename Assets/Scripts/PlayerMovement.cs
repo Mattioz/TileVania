@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myBodyCollider2D;
     BoxCollider2D myFeetCollider2D;
 
+    bool isAlive = true;
     float gravityScaleStart;
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -25,24 +27,29 @@ public class PlayerMovement : MonoBehaviour
         gravityScaleStart = myRigidbody.gravityScale;
     }
 
-    
+
     void Update()
-    {   
+    {
+        if (!isAlive) { return; }
         Run();
         FlipSprite();
         ClimbLadder();
+        Die();
     }
 
     void OnMove(InputValue value)
     {
+        if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
-        if(!myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
-        
-        if(value.isPressed)
+        if (!isAlive) { return; }
+
+        if (!myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+
+        if (value.isPressed)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
@@ -50,16 +57,16 @@ public class PlayerMovement : MonoBehaviour
 
     void ClimbLadder()
     {
-        if(!myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
-        { 
+        if (!myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
             myRigidbody.gravityScale = gravityScaleStart;
             myAnimator.SetBool("isClimbing", false);
-            return; 
+            return;
         }
 
         Vector2 climbVelocity = new Vector2(myRigidbody.velocity.x, moveInput.y * runSpeed);
         myRigidbody.velocity = climbVelocity;
-        myRigidbody.gravityScale = 0;      
+        myRigidbody.gravityScale = 0;
 
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
 
@@ -67,14 +74,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Run()
-    {   
+    {
         Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
 
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
 
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
-        
+
     }
 
     void FlipSprite()
@@ -83,7 +90,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x), 1f);
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+        }
+    }
+
+    void Die()
+    {
+        if(myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
         }
     }
 }

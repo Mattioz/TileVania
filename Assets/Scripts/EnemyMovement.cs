@@ -18,15 +18,15 @@ public class EnemyMovement : MonoBehaviour
         myRigidbody.velocity = new Vector2(moveSpeed, 0f);
     }
 
-    void OnTriggerExit2D(Collider2D other) 
-    {    
+    void OnTriggerExit2D(Collider2D other)
+    {
         moveSpeed = -moveSpeed;
-        FlipEnemyFacing();  
+        FlipEnemyFacing();
     }
 
     void FlipEnemyFacing()
     {
-        transform.localScale = new Vector2 (-(Mathf.Sign(myRigidbody.velocity.x)), 1f);
+        transform.localScale = new Vector2(-(Mathf.Sign(myRigidbody.velocity.x)), 1f);
     }
 
 }
