@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 20f;
     [SerializeField] float climbSpeed = 10f;
-    [SerializeField] Vector2 deathKick = new Vector2(10f, 10f); 
+    [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
@@ -56,6 +58,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnFire(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            if (!isAlive) { return; }
+
+            Instantiate(bullet, gun.position, transform.rotation);
+        }
+
+    }
+
     void ClimbLadder()
     {
         if (!myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
@@ -82,7 +95,6 @@ public class PlayerMovement : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
 
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
-
     }
 
     void FlipSprite()
@@ -97,12 +109,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy","Hazards")))
+        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
         }
     }
-    
+
 }
