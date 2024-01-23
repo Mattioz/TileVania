@@ -20,7 +20,7 @@ TagManager:
   - Enemy
   - Hazards
   - Bullet
-  - 
+  - Interactables
   - 
   - 
   - 
@@ -48,18 +48,21 @@ TagManager:
   - name: Water
     uniqueID: 285667981
     locked: 0
+  - name: Platforms
+    uniqueID: 3485975945
+    locked: 0
   - name: Climbing
     uniqueID: 3590077337
-    locked: 0
-  - name: Player
-    uniqueID: 773215367
     locked: 0
   - name: Hazards
     uniqueID: 402011261
     locked: 0
+  - name: Interactables
+    uniqueID: 588587603
+    locked: 0
   - name: Enemy
     uniqueID: 1258587629
     locked: 0
-  - name: Platforms
-    uniqueID: 3485975945
+  - name: Player
+    uniqueID: 773215367
     locked: 0
