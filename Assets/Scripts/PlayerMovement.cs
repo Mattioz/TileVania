@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 20f;
-    [SerializeField] float climbSpeed = 10f;
+    //[SerializeField] float climbSpeed = 10f;
     [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
