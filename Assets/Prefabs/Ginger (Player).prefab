@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 5230450413272084645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.181, y: -0.136, z: 0}
+  m_LocalPosition: {x: 0.28, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 2117010142768502239}
   m_Layer: 8
   m_Name: Ginger (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 773215367
-  m_SortingLayer: 4
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 1857188551261513057, guid: 5973e7d95115a6048a3be5f39e1dcfd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -252,8 +252,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 6
   jumpSpeed: 15
-  climbSpeed: 5
   deathKick: {x: 20, y: 20}
+  bullet: {fileID: 4707903064085204279, guid: ac1e7954ad31d6a48babfa400b681d1c, type: 3}
+  gun: {fileID: 3370133627378431561}
 --- !u!61 &2117010142768502239
 BoxCollider2D:
   m_ObjectHideFlags: 0
